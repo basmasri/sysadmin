@@ -1,3 +1,6 @@
+# Create a bat script with the following contents: powershell.exe -ExecutionPolicy ByPass -Command "%~dp0\WSUS.ps1" Y Y > C:\WSUSCheckResults.log
+# Create a package in SCCM, point it to the bat script that is created
+
 $UpdateSession = New-Object -Com Microsoft.Update.Session
 $UpdateSearcher = $UpdateSession.CreateUpdateSearcher()
 
